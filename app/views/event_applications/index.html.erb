@@ -178,7 +178,7 @@
                           Flagged
                         </span>
                       <% end %>
-                      <% if form.user.rsvp %>
+                      <% if (!form.user.nil? and form.user.rsvp) %>
                         <span class="tag tag-success event-application-header-status-margin">
                           RSVP
                         </span>
